@@ -1,0 +1,84 @@
+/*
+  Autor: Lello Alberto Zita
+  Projeto: Task Manager (To-Do List)
+*/
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Layout geral */
+body {
+  background: #f4f4f4;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  background: #ffffff;
+  width: 320px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  gap: 5px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Lista */
+ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+/* Tarefa */
+li {
+  background: #eeeeee;
+  padding: 8px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Estado concluído */
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Botão remover */
+li button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 4px 6px;
+  cursor: pointer;
+}
